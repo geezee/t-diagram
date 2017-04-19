@@ -1,0 +1,23 @@
+{
+  "name": "t-diagram",
+  "version": "0.1.0",
+  "description": "Package responsible for drawing TDiagrams",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tdiagram",
+    "drawing"
+  ],
+  "author": "George Zakhour <george.zakhour@epfl.ch> (http://george.zakhour.me)",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geezee/t-diagram.git"
+  },
+  "bugs": {
+    "url": "https://github.com/geezee/t-diagram/issues"
+  },
+  "homepage": "https://github.com/geezee/t-diagram#readme"
+}

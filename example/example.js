@@ -2,9 +2,9 @@ const td = require("../index");
 
 // the parameters used for the cost function
 const cost_params = {
-    alpha: 5, // how important the number of breaks is
-    beta: 1, // how important the number of intersections is
-    gamma: 10, // how important the aspect ratio is
+    alpha: 10, // how important the number of breaks is
+    beta: 10, // how important the number of intersections is
+    gamma: 2, // how important the aspect ratio is
     prefered_aspect_ratio: 1.414286 // the target aspect ratio
 };
 
@@ -107,7 +107,7 @@ const drawer = new td.TDiagramDrawer(cost_params, 100, 0.3, tdiagram);
 console.error("Iteration, Min Cost");
 
 // do the learning
-const population = drawer.learn(10, function(iter, costs) {
+const population = drawer.learn(100, function(iter, costs) {
     var min = costs.reduce(function(x, y) {
         return x > y.total ? y.total : x;
     }, costs[0].total);

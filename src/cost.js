@@ -223,7 +223,7 @@ function TDiagramCost(tdiagram) {
         // how close things are to the aspect ration needed
         var ar_diagram = self.tdiagram.getCanvasWidth() / self.tdiagram.getCanvasHeight();
         var ar = Math.exp(Math.max(ar_diagram, prefered_aspect_ratio) /
-                 Math.min(ar_diagram, prefered_aspect_ratio) - 1);
+                 Math.min(ar_diagram, prefered_aspect_ratio));
 
         return {
             branches_factor: branches_factor,
